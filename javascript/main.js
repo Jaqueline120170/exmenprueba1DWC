@@ -47,7 +47,7 @@ function enviar() {
             break;
         case 'table':
             document.querySelector(`#${zona}`).appendChild(creaTabla());
-            return;
+            break;
         case 'lista':
             document.querySelector(`#${zona}`).appendChild(creaLista());
             break;
