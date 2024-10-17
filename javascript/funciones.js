@@ -50,15 +50,16 @@ export function creaParrafo() {
 
 export function creaLista() {
     const lista = ['Bananas', 'Manzanas', 'Melocotones', 'Naranjas'];
-    const ul =document.createElement('ul');
+    // Crea una lista con este array y la devuelve
+    const ul = document.createElement('ul');
     ul.className="list-group";
-    //por cada fruta en la lista añado un elemento li a ala lista ul
-    lista.forEach(fruta=>{
+    // Por cada fruta en la lista, añadiré un elemento li a la lista ul
+    lista.forEach( fruta => {
         const li = document.createElement('li');
-        li.innerText=fruta;
-        li.className="list-group-item"
+        li.innerText = fruta;
+        li.className = "list-group-item";
         ul.appendChild(li);
-    });
-    //devuelvo la lista
-    return li;
+    } );
+    // Devuelvo la lista
+    return ul;
 }

@@ -63,8 +63,6 @@ function limpiar(){
     document.querySelector('#D').innerHTML="";
 }
 
-
-
 // Asignación de funciones al objeto window
 window.enviar = enviar;
 window.seleZona= seleZona;
